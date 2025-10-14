@@ -65,8 +65,6 @@
 
 - The Worker Data Server is part of The DevRev Server and is accessible at http://localhost:8003/external-worker, so it must not be mocked.
 
-- The API server is running at http://localhost:8004, so it must not be mocked.
-
 - The `jest.setup.js` file is managed externally and cannot be modified within The Conformance Tests.
 
 - All test files from The Conformance Tests must use the `.test.ts` suffix to be discoverable by Jest's default test pattern matching.
