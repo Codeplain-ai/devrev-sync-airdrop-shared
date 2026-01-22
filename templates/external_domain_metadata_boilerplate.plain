@@ -1,11 +1,11 @@
-***Definitions:***
+***definitions***
 
 - :ExternalDomainMetadataJSONObjectStructure: is the structure of :ExternalDomainMetadataJSONObject: is specified by the JSON schema defined in the resource [external_domain_metadata_schema.json](external_domain_metadata_schema.json).
   - Please note that all refers_to keys in reference and typed_reference fields must use the format "#record:<record_type_key>", where <record_type_key> matches a key in the top-level record_types. This ensures references are unambiguous and valid. Use {} as the value to refer by default identifier (id), or specify { "by_field": "field_name" } to use a custom key.
 
 - :ExternalDomainMetadataJSONObjectDisplayName: is the display name (human-readable label) of a field within a given record type.
 
-***Non-Functional Requirements:***
+***technical specs***
 
 - Store :ExternalDomainMetadataJSONObject: as a separate JSON file.
 
@@ -13,7 +13,11 @@
 
 - The :UnitTests: *MUST NOT* test the contents and *MUST NOT* teset the  of :ExternalDomainMetadataJSONObject:.
 
-***Test Requirements:***
+***test specs***
+
+- Set timeout for each test to 30 seconds.
+
+- :ConformanceTests: should print the EDM to the console.
 
 - Set timeout for each test to 30 seconds.
 
