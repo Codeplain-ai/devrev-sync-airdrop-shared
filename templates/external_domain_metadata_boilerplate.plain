@@ -19,10 +19,6 @@
 
 - :ConformanceTests: should print the EDM to the console.
 
-- Set timeout for each test to 30 seconds.
-
-- :ConformanceTests: should print the EDM to the console.
-
 - Validate generated :ExternalDomainMetadataJSONObject: with :ChefCLI: using the command "${CHEF_CLI_PATH} validate-metadata":
   - This command reads JSON object from stdin.
   - The path to :ChefCLI: executable is provided in the environment variables `CHEF_CLI_PATH`.
